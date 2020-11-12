@@ -1,0 +1,62 @@
+* {
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 1366px;
+  height: auto;
+  box-sizing: border-box; 
+  }
+/* begining of the header */
+
+#bg-img{
+    width: 1366px;
+    height: 630px;
+    background-image: url("pixel/20180117194441-GettyImages-896355786.jpeg");
+  }
+
+#navbar{
+    padding-top: 10px;
+    padding-left: 30px;
+    text-decoration-line: none;
+}  
+.nav-link{
+    color: white;
+}
+
+#main-title{
+    background-color: rgba(26, 26, 26, 50%);
+    color: white;
+    font-size: 450%;
+    font-family: 'Trebuchet MS';
+    padding-left: 530px;
+    padding-top: 150px;
+}
+#quotes{
+    background-color: rgba(26, 26, 26, 50%);
+    color: white; 
+    padding-left: 530px ;
+
+}
+#login-form{
+    background-color: rgba(26, 26, 26, 50%);
+    border-color: rgba(26, 26, 26, 100%);
+    border:100px;
+    padding: 20px;
+    text-align: center;
+    width: 1000px;
+    margin-left: 200px;
+  } 
+
+  /* end of the header */
+  
+
+  sign-up-form{
+      text-align: center;
+  }
+  #campaign-form{
+    width: 1366px;
+    height: 630px;
+  }
