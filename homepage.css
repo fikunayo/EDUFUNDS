@@ -1,0 +1,191 @@
+* {
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 1366px;
+  height: auto;
+  box-sizing: border-box; 
+  }
+/* begining of the header */
+
+#bg-img{
+    width: 1366px;
+    height: 630px;
+    background-image: url("pixel/20180117194441-GettyImages-896355786.jpeg");
+  }
+
+#navbar{
+    padding-top: 10px;
+    padding-left: 30px;
+    text-decoration-line: none;
+}  
+.nav-link{
+    color: white;
+}
+
+#main-title{
+    background-color: rgba(26, 26, 26, 50%);
+    color: white;
+    font-size: 450%;
+    font-family: 'Trebuchet MS';
+    padding-left: 530px;
+    padding-top: 150px;
+}
+#quotes{
+    background-color: rgba(26, 26, 26, 50%);
+    color: white; 
+    padding-left: 530px ;
+
+}
+#login-form{
+    background-color: rgba(26, 26, 26, 50%);
+    border-color: rgba(26, 26, 26, 100%);
+    border:100px;
+    padding: 20px;
+    text-align: center;
+    width: 1000px;
+    margin-left: 200px;
+  } 
+
+  /* end of the header */
+  /* begining of the campaign */
+  #campaign{
+    margin-top: 10px;
+  }
+
+  .card{
+    float: left;
+    width: 430px;
+    height: 630px;
+    margin: 10px;
+    border: 3px solid #eeeeee;
+    box-shadow: 0 2px 2px red;
+  }
+  #campaign-1{
+    width: 425px;
+    height: 310px;
+    background-image: url("pixel/pupils-raising-their-hands-during-260nw-251933845.jpg"); 
+  }
+
+  #campaign-2{ 
+    
+    width: 425px;
+    height: 310px;
+    background-image: url("pixel/Screen-Shot-2018-09-06-at-2.47.41-PM.png");
+ 
+  }
+
+  #campaign-3{ 
+    
+    width: 425px;
+    height: 310px;
+    background-image: url("pixel/pexels-olia-danilevich-5088188_1.jpg");
+   
+  }
+  #campaign-4{ 
+    
+    width: 425px;
+    height: 310px;
+    background-image: url("pixel/blur-book-stack-books-590493.jpg");
+   
+  }
+  #campaign-5{ 
+    
+    width: 425px;
+    height: 310px;
+    background-image: url("pixel/UNI328048.jpg");
+   
+  }
+  #campaign-6{ 
+    
+    width: 425px;
+    height: 310px;
+    background-image: url("pixel/UNI280376.jpg.Banner.jpg");
+   
+  }
+  #clear{
+    clear: both;
+  }
+  /* end of the campaign */
+ /* begining of the form */
+  sign-up-form{
+      
+      text-align: center;
+  }
+  #campaign-form{
+    width: 1366px;
+    height: 630px;
+  }
+
+
+  /* begining of footer */
+
+  #footer{}
+
+#footerTop{
+	clear: both;
+	/* width: 1366px; */
+	height:90px;
+	background-color:#000d1a;
+	text-align: center;
+	padding: 80px;
+	box-sizing: border-box;
+	margin:0;
+
+ } 
+ #starter{
+	background-color: #3385ff;
+	font-size: 30px;
+	color: black;
+	
+	 	
+}
+#tutorialer{
+	font-size: 25px;
+	color: #3385ff;
+}
+
+#footerDown{
+	background-color: #00264d;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	width: 1349px;
+} 
+#logo{
+	float:left;
+	width: 449px;
+	text-align: center;
+	
+}
+
+#footerDown1{
+	float:left;
+	width: 449px;
+	background-color: #00264d;
+	text-align: center;
+
+
+}
+#footerDown1 > ul {
+	list-style: none;
+}
+
+#footerDown2{
+	width: 449px;
+    float:left;
+	background-color: #00264d;
+	text-align: center;
+	
+} 
+#footerDown2 > ul {
+
+	list-style: none;
+}
+#clear{
+
+	clear: both;
+}
