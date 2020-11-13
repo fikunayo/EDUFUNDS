@@ -1,5 +1,5 @@
-// We will be using Solidity version 0.5.4
-pragma solidity 0.5.8;
+// We will be using Solidity version 0.6.0
+pragma solidity 0.6.0;
 // Importing OpenZeppelin's SafeMath Implementation
 import 'https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/math/SafeMath.sol';
 contract Crowdfunding {
