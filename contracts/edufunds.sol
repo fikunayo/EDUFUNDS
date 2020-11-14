@@ -1,7 +1,8 @@
 // We will be using Solidity version 0.6.0
 pragma solidity 0.6.0;
 // Importing OpenZeppelin's SafeMath Implementation
-import 'https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/math/SafeMath.sol';
+import '@openzeppelin/contracts/math/SafeMath.sol';
+
 contract Crowdfunding {
     using SafeMath for uint256;
     // List of existing projects
@@ -143,9 +144,7 @@ contract Project {
         }
         return true;
     }
-    /** @dev Function to get specific information about the project.
-      * @return Returns all the project's details
-      */
+    
     function getDetails() public view returns 
     (
         address payable projectStarter,
