@@ -5,8 +5,8 @@
 		<meta charset="utf-8">
 		<meta name="discription" content="crowdfunding">
 		<title>EDUFUND</title>
-		<!-- <script src="../js/homepage.js"></script> -->
 		<script src="../node_modules/web3/dist/web3.min.js"></script>
+		<script src="../js/crowdfundinginstance.js"></script>
 
 	</head>
 	<body style=background-color:#e6e6ff;>
@@ -218,16 +218,17 @@
 	
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 
-		<script>
+		<!-- <script>
 			if (typeof web3 !== 'undefined') {
             web3 = new Web3(web3.currentProvider);
         } else {
             // set the provider you want from Web3.providers
-			web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+			web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:9545"));
+        }
 			
 			web3.eth.defaultAccount = web3.eth.accounts[0];
 
-			const crowdfundingContract = new web3.eth.Contract([
+			var Crowdfunding = new web3.eth.Contract([
 				{
 					"anonymous": false,
 					"inputs": [
@@ -338,11 +339,9 @@
 					"stateMutability": "nonpayable",
 					"type": "function"
 				}
-			],
-			"0x4d80f230dc65C3096d2A5E8825BEA755c29E7cB0"
-			);
-			console.log(crowdfundingContract);
-        }
-		</script>
+			], '0x4d80f230dc65C3096d2A5E8825BEA755c29E7cB0');
+
+        	console.log(Crowdfunding);
+		</script> -->
 	</body>
 </html>

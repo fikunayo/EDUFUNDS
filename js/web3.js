@@ -1,4 +1,6 @@
+<script type="module" src="crowdfundinginstance.js"></script>
 /* eslint-disable */
+import { Script } from 'vm';
 import Web3 from 'web3';
 
 if (window.ethereum) {
