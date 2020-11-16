@@ -14,12 +14,11 @@ if (window.ethereum) {
   console.log('Non-Ethereum browser detected. You should consider trying MetaMask!');
 }
 
+const web3 = new Web3('http://localhost:9545');
 
-// const init = async () => {
-    const web3 = new Web3('http://localhost:9545');
+web3.eth.defaultAccount = web3.eth.accounts[0];
 
-		web3.eth.defaultAccount = web3.eth.accounts[0];
-
+const init = async () => {
     const abi = [
       {
         "anonymous": false,
@@ -135,13 +134,13 @@ if (window.ethereum) {
 
     const address = "0x4d80f230dc65C3096d2A5E8825BEA755c29E7cB0";
 
-    const contract = new web3.eth.Contract(
+    const Crowdfund = new web3.eth.Contract(
         abi,
         address
     );
 
-    console.log(contract);
+    console.log(Crowdfund);
 
-// }
+}
 
-// init();
+init();
