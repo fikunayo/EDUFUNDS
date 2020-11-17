@@ -7,7 +7,7 @@ contract Crowdfunding {
     using SafeMath for uint256;
     string public functionCalled = "Done!";
 
-    function sendEther() external view returns(string memory) {
+    function sendEther() public view returns(string memory) {
         return functionCalled;
     }
 

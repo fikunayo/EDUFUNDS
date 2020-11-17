@@ -1,4 +1,4 @@
-      const abi = [
+      const projectAbi = [
         {
             "inputs": [
                 {
@@ -263,15 +263,11 @@
         }
     ];
   
-      const address = "0x4d80f230dc65C3096d2A5E8825BEA755c29E7cB0";
+      const projectAddress = "0x5b4629A59354fD7a886029209E15542450AeD4Af";
   
       const Project = new web3.eth.Contract(
-          abi,
-          address
+          projectAbi,
+          projectAddress
       );
   
       console.log(Project);
-  
-  // }
-  
-  // init();

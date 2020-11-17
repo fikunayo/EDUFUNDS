@@ -18,8 +18,7 @@ const web3 = new Web3('http://localhost:9545');
 
 web3.eth.defaultAccount = web3.eth.accounts[0];
 
-const init = async () => {
-    const abi = [
+    const crowdfundAbi = [
       {
         "anonymous": false,
         "inputs": [
@@ -64,6 +63,34 @@ const init = async () => {
         "type": "event"
       },
       {
+        "inputs": [
+          {
+            "internalType": "string",
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "durationInDays",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountToRaise",
+            "type": "uint256"
+          }
+        ],
+        "name": "startProject",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
         "inputs": [],
         "name": "functionCalled",
         "outputs": [
@@ -101,46 +128,14 @@ const init = async () => {
         ],
         "stateMutability": "view",
         "type": "function"
-      },
-      {
-        "inputs": [
-          {
-            "internalType": "string",
-            "name": "title",
-            "type": "string"
-          },
-          {
-            "internalType": "string",
-            "name": "description",
-            "type": "string"
-          },
-          {
-            "internalType": "uint256",
-            "name": "durationInDays",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "amountToRaise",
-            "type": "uint256"
-          }
-        ],
-        "name": "startProject",
-        "outputs": [],
-        "stateMutability": "nonpayable",
-        "type": "function"
       }
     ];
 
-    const address = "0x4d80f230dc65C3096d2A5E8825BEA755c29E7cB0";
+    const crowdfundAddress = "0x5b4629A59354fD7a886029209E15542450AeD4Af";
 
     const Crowdfund = new web3.eth.Contract(
-        abi,
-        address
+        crowdfundAbi,
+        crowdfundAddress
     );
 
     console.log(Crowdfund);
-
-}
-
-init();
