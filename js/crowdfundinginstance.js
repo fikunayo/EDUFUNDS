@@ -92,19 +92,6 @@ web3.eth.defaultAccount = web3.eth.accounts[0];
       },
       {
         "inputs": [],
-        "name": "functionCalled",
-        "outputs": [
-          {
-            "internalType": "string",
-            "name": "",
-            "type": "string"
-          }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-      },
-      {
-        "inputs": [],
         "name": "returnAllProjects",
         "outputs": [
           {
@@ -118,24 +105,25 @@ web3.eth.defaultAccount = web3.eth.accounts[0];
       },
       {
         "inputs": [],
-        "name": "sendEther",
+        "name": "test",
         "outputs": [
           {
             "internalType": "string",
-            "name": "",
+            "name": "myString",
             "type": "string"
           }
         ],
-        "stateMutability": "view",
+        "stateMutability": "pure",
         "type": "function"
       }
     ];
 
     const crowdfundAddress = "0x5b4629A59354fD7a886029209E15542450AeD4Af";
 
-    const Crowdfund = new web3.eth.Contract(
+    const Crowdfunding = new web3.eth.Contract(
         crowdfundAbi,
         crowdfundAddress
     );
 
-    console.log(Crowdfund);
+    Crowdfunding.methods.test().call()
+    .then(console.log);

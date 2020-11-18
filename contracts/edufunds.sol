@@ -5,10 +5,9 @@ import '@openzeppelin/contracts/math/SafeMath.sol';
 
 contract Crowdfunding {
     using SafeMath for uint256;
-    string public functionCalled = "Done!";
 
-    function sendEther() public view returns(string memory) {
-        return functionCalled;
+    function test() public pure returns(string memory myString) {
+        return "Done!";
     }
 
     // List of existing projects
