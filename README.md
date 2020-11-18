@@ -6,7 +6,7 @@ Clone this repo via to your local machine and install the dependencies by doing 
 
 ```bash
 git clone https://github.com/fikunayo/EDUFUNDS
-cd crowdfunding
+cd EDUFUNDS
 npm install
 ```
 
