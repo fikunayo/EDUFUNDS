@@ -5,7 +5,7 @@ A simple Ethereum-based crowdfunding decentralized application (dapp) where you 
 Clone this repo via to your local machine and install the dependencies by doing the following:
 
 ```bash
-git clone https://github.com/openberry-ac/crowdfunding.git
+git clone https://github.com/fikunayo/EDUFUNDS
 cd crowdfunding
 npm install
 ```
