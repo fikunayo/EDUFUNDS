@@ -1,6 +1,14 @@
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
-@import '../node_modules/bootstrap-vue/src/index.scss';
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap-vue/src/index.scss";
 
-// .navi {
-//     background-color: blue;
-// }
+.headline {
+  position: absolute;
+  top: 29%;
+  left: 29%;
+  color: #000000;
+}
+
+.cust-carousel {
+    background-color: #000; /* Black background with opacity */
+    opacity: .8;
+}

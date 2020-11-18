@@ -3,7 +3,7 @@
     <v-content>
       <v-container>
         <div>
-          <b-navbar toggleable="lg" type="dark" variant="primary">
+          <b-navbar toggleable="lg" type="dark" variant="dark">
             <b-navbar-brand href="#">Edufunds</b-navbar-brand>
 
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -21,34 +21,29 @@
 
         <div>
           <b-carousel
-            id="carousel-no-animation"
-            style="text-shadow: 0px 0px 2px #000"
-            no-animation
-            indicators
+            id="carousel-fade"
+            class="cust-carousel"
             img-width="1024"
             img-height="480"
           >
             <b-carousel-slide
-              caption="First slide"
               img-src="https://picsum.photos/1024/480/?image=10"
             ></b-carousel-slide>
             <b-carousel-slide
-              caption="Second Slide"
               img-src="https://picsum.photos/1024/480/?image=12"
             ></b-carousel-slide>
             <b-carousel-slide
-              caption="Third Slide"
               img-src="https://picsum.photos/1024/480/?image=22"
             ></b-carousel-slide>
           </b-carousel>
         </div>
 
-        <v-layout text-xs-center wrap>
+        <v-layout text-xs-center wrap class="headline">
           <v-flex mb-4>
             <h1 class="font-weight-bold mb-3">
               Edufunds
             </h1>
-            <p class="subheading font-weight-regular">
+            <p class="subheading font-weight-bold">
               Education is the passport to the future,
               <br />
               for tomorrow belongs to those who prepare for it today.
@@ -61,12 +56,9 @@
 
         <v-layout row justify-center>
           <v-dialog v-model="startProjectDialog" max-width="600px" persistent>
-            <v-btn slot="activator" color="primary" dark>Start a Project</v-btn>
+            <v-btn slot="activator" color="dark" id="campaign-form" dark>Start a Project</v-btn>
             <v-card>
-              <v-card-title>
-                <span class="headline font-weight-bold mt-2 ml-4"
-                  >Bring your project to life</span
-                >
+              <v-card-title>  
               </v-card-title>
               <v-card-text class="pt-0">
                 <v-container class="pt-0" grid-list-md>
@@ -135,7 +127,7 @@
       </v-container>
 
       <v-container grid-list-lg>
-        <h1 class="display-1 font-weight-bold mb-3">
+        <h1 class="display-1 font-weight-bold mb-3" id="campaigns">
           Projects
         </h1>
         <v-layout row wrap>
